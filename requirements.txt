@@ -26,3 +26,11 @@ influxdb               >=4.1.1,  <4.99
 coloredlogs            >=7.0.0,  <7.99
 pydash                 >=4.1.0,  <4.99
 geopy                  == 1.11.0
+
+# External dependencies
+
+codecov==2.0.5
+coverage==4.3.4
+requests==2.13.0
+six==1.10.0
+xmltodict==0.10.2
