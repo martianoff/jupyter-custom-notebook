@@ -6,6 +6,9 @@ USER root
 
 RUN apt-get -y update && apt-get install -y build-essential git
 
+#Install weasyprint
+RUN apt-get install -y sudo libcairo2 libpango1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info
+
 USER $NB_USER
 
 RUN wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py && unlink get-pip.py
@@ -18,7 +21,6 @@ RUN echo "c.InteractiveShellApp.exec_lines = ['import sys; sys.path.append(\"/ho
 
 ADD requirements*.txt ./
 
-RUN pip install -r requirements-charts.txt
 RUN pip install -r requirements-heavy.txt
 RUN pip install -r requirements.txt
 RUN pip install -r requirements-dev.txt
@@ -28,6 +30,8 @@ RUN conda install gdal && \
     conda install google-cloud-storage
 
 USER root
+
+RUN chown $NB_UID /home/jovyan/work
 
 RUN apt-get remove -y build-essential git && \
     apt-get clean -y && \

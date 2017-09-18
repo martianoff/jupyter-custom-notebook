@@ -1,37 +1,48 @@
 # Main dependencies
 
-Flask                  >=0.12.2, <0.12.99
-flask-restplus         >=0.10.1, <0.10.99
-flask-caching          >=1.2.0,  <1.99
-Flask-HTTPAuth         >=3.2.2,  <3.99
-flask-cors             >=3.0.2,  <3.99
-flask-sqlalchemy       >=2.2.0,  <2.99
-celery                 >=4.0.2,  <4.99
-python-dotenv          >=0.6.3,  <0.6.99
-google                 >=1.9.3,  <1.99
-google-cloud-spanner   >=0.24.2, <0.24.99
-PyJWT                  >=1.5,    <1.99
-marshmallow            >=2.13.5, <2.99
-passlib                >=1.7.1,  <1.99
-PyMySQL                >=0.7.11, <0.7.99
-ujson                  >=1.35,   <1.99
-marshmallow-jsonapi    >=0.10.1, <0.10.99
-PyYAML                 >=3.12,   <3.99
-openpyxl               >=2.4.5,  <2.99
-PyMySQL                >=0.7.11, <0.7.99
-redis                  >=2.10.5, <2.99
-hiredis                >=0.2.0,  <0.2.99
-pyrabbit               >=1.1.0,  <1.99
-influxdb               >=4.1.1,  <4.99
-coloredlogs            >=7.0.0,  <7.99
-pydash                 >=4.1.0,  <4.99
+Flask                  == 0.12.2
+flask-restplus         == 0.10.1
+flask-caching          == 1.3.2
+Flask-HTTPAuth         == 3.2.3
+flask-cors             == 3.0.3
+flask-sqlalchemy       == 2.2
+celery                 == 4.1.0
+python-dotenv          == 0.6.5
+PyJWT                  == 1.5.2
+marshmallow            == 2.13.6
+passlib                == 1.7.1
+PyMySQL                == 0.7.11
+ujson                  == 1.35
+marshmallow-jsonapi    == 0.10.2
+PyYAML                 == 3.12
+openpyxl               == 2.4.8
+redis                  == 2.10.6
+hiredis                == 0.2.0
+pyrabbit               == 1.1.0
+influxdb               == 4.1.1
+coloredlogs            == 7.3
+pydash                 == 4.1.0
 geopy                  == 1.11.0
 polyline               == 1.3.2
+weasyprint             == 0.40
 
 # External dependencies
 
-codecov==2.0.5
-coverage==4.3.4
-requests==2.13.0
-six==1.10.0
-xmltodict==0.10.2
+google                 == 1.9.3
+google-cloud           == 0.24.0
+google-cloud-storage   == 1.1.1
+gapic-google-cloud-spanner-admin-database-v1 == 0.15.3
+gapic-google-cloud-spanner-admin-instance-v1 == 0.15.3
+gapic-google-cloud-spanner-v1                == 0.15.3
+google-auth                     == 1.0.2
+google-auth-httplib2            == 0.0.2
+google-cloud-core               == 0.24.1
+google-cloud-spanner            == 0.24.2
+google-gax                      == 0.15.14
+googleapis-common-protos        == 1.5.2
+grpc-google-iam-v1              == 0.11.1
+proto-google-cloud-spanner-admin-database-v1 == 0.15.3
+proto-google-cloud-spanner-admin-instance-v1 == 0.15.3
+proto-google-cloud-spanner-v1   == 0.15.3
+grpc-google-iam-v1              == 0.11.1
+grpcio == 1.4.0
