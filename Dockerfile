@@ -25,7 +25,8 @@ RUN pip install -r requirements-heavy.txt
 RUN pip install -r requirements.txt
 RUN pip install -r requirements-dev.txt
 
-RUN conda install gdal && \
+RUN pip install xmltodict && \
+    conda install gdal && \
     conda install google-cloud-core && \
     conda install google-cloud-storage
 
