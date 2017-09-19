@@ -1,0 +1,4 @@
+seaborn
+plotly
+ipywidgets
+mplleaflet

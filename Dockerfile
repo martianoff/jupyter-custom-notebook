@@ -24,6 +24,7 @@ ADD requirements*.txt ./
 RUN pip install -r requirements-heavy.txt
 RUN pip install -r requirements.txt
 RUN pip install -r requirements-dev.txt
+RUN pip install -r requirements-charts.txt
 
 RUN pip install xmltodict && \
     conda install gdal && \
